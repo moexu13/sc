@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   --color-background: var(--background);
@@ -24,10 +24,14 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #faf9ff;
+  --foreground: #1a1625;
+  --color-primary: #8f87f1;
+  --color-secondary: #c68efd;
+  --color-tertiary: #e9a5f1;
 }
 
+/* TODO: design dark color scheme */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -38,5 +42,5 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Instrument Sans", Arial, Helvetica, sans-serif;
 }
